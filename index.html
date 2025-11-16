@@ -1,0 +1,118 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+            background: #fff; 
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 18px 24px 0 0;
+        }
+        .header a {
+            color: #5f6368;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+        .header a:hover { text-decoration: underline; }
+        .center-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 500px;
+        }
+        .logo {
+            font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+            font-size: 80px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            letter-spacing: -3px;
+        }
+        .logo span {
+            color: #4285F4;
+        }
+        .logo .red { color: #EA4335; }
+        .logo .yellow { color: #FBBC05; }
+        .logo .green { color: #34A853; }
+        .logo .blue { color: #4285F4; }
+        .logo .grey { color: #5f6368; }
+        .search-box {
+            width: 100%;
+            max-width: 560px;
+            position: relative;
+        }
+        .search-box input[type="text"] {
+            width: 100%;
+            padding: 14px 48px 14px 18px;
+            font-size: 18px;
+            border-radius: 24px;
+            border: 1px solid #dfe1e5;
+            box-shadow: 0 2px 5px 0 rgba(60,64,67,.15);
+            outline: none;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .search-box input[type="text"]:focus {
+            box-shadow: 0 2px 8px 0 rgba(60,64,67,.25);
+        }
+        .btn-area {
+            text-align: center;
+        }
+        .btn-area input[type="submit"] {
+            background: #f8f9fa;
+            color: #5f6368;
+            border: 1px solid #f8f9fa;
+            padding: 11px 22px;
+            margin: 6px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: border 0.2s;
+        }
+        .btn-area input[type="submit"]:hover {
+            border: 1px solid #c6c6c6;
+        }
+        .footer {
+            font-size: 14px;
+            background: #f2f2f2;
+            color: #5f6368;
+            padding: 12px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+    </div>
+    <div class="center-box">
+        <div class="logo">
+            G<span class="red">o</span><span class="yellow">o</span>g<span class="blue">l</span><span class="green">e</span>
+        </div>
+        <form class="search-box" autocomplete="off" onsubmit="return false;">
+            <input type="text" placeholder="Search Google or type a URL">
+            <div class="btn-area">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        © 2025 Google – Educational demo, not the actual Google website
+    </div>
+</body>
+</html>
